@@ -1,0 +1,99 @@
+@import '../../../style/variables.scss';
+
+.headerTop {
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+   
+    &__logo {}
+
+    &__navigate {
+        display: flex;
+        align-items: center;
+    }
+
+    &__navigateList {
+        display: flex;
+        gap: 32px;
+        margin-right: 56px;
+        &_item {
+            a {
+                font-size: 13px;
+                font-weight: 400;
+                color: $grey;
+            }
+        }
+
+       
+    }
+
+    
+
+    &__button {
+        background-color: $blue;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        color: #FBFBFB;
+        padding: 8px 20px;
+        border-radius: 12px;
+        transition: all .3s ease-in-out;
+        border: none;
+
+        &:hover {
+            background-color: $blueLight;
+        }
+    }
+
+    &__menu {
+        display: none;
+        background: none;
+    }
+}
+
+
+.burger {
+    transition: all 0.3s ease;
+    background: none;
+}
+
+.burger path{
+    transition: all 0.3s ease;
+}
+
+.burger:hover path{
+    fill: $blueLight;
+}
+
+.closeMenu:hover path {
+    fill: $blueLight;
+}
+
+
+
+
+@media (max-width: 1199px)  {
+    .headerTop__navigateList {
+        display: none;
+    }
+
+    .headerTop__menu {
+        display: inline-block;
+        margin-left: 24px;
+    }
+}
+
+@media (max-width: 599px){
+    .headerTop__button {
+        display: none;
+    }
+}
+
+@media (max-width: 444px) {
+    .headerTop .container {
+        flex-direction: column;
+    }
+}

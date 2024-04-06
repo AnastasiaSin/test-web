@@ -1,0 +1,26 @@
+.main {
+
+    &__title {
+        font-size: 24px;
+        font-weight: 500;
+        color: #3E3E3E;
+        margin-top: 44px;
+    }
+}
+
+@media (max-width: 1199px)  {
+    .main__title {
+        
+        width: 70%;
+    }
+}
+
+@media (max-width: 599px) {
+    .main__title{
+        font-size: 16px;
+        padding-bottom: 24px;
+        width: 100%;
+        padding-bottom: 0;
+        margin-top: 16px;
+    }
+}
